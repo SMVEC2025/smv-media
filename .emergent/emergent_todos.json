@@ -1,0 +1,30 @@
+[
+  {
+    "content": "Add DELETE endpoints to backend (events, tasks, institutions, equipment, users) with validation",
+    "status": "completed"
+  },
+  {
+    "content": "Create Notifications data model and API endpoints (create, get, mark as read)",
+    "status": "completed"
+  },
+  {
+    "content": "Add notification triggers (task assigned, task completed, event status changed)",
+    "status": "completed"
+  },
+  {
+    "content": "Build ConfirmDialog reusable component for delete confirmations",
+    "status": "completed"
+  },
+  {
+    "content": "Build Notification bell icon component and dropdown",
+    "status": "completed"
+  },
+  {
+    "content": "Add delete functionality to all pages (Events, Event Details, Institutions, Equipment, Users)",
+    "status": "completed"
+  },
+  {
+    "content": "Test all delete operations and notifications end-to-end",
+    "status": "completed"
+  }
+]
