@@ -281,7 +281,14 @@ async def get_me(current_user: dict = Depends(get_current_user)):
 # ============================================================================
 # USER ROUTES
 # ============================================================================
+@app.get("/")
+async def root():
+    return {"status": "ok", "app": "SMV Media backend"}
 
+@app.get("/health")
+async def health():
+    return {"status": "healthy"}
+    
 @api_router.get("/users", response_model=List[UserResponse])
 async def get_users(current_user: dict = Depends(require_role(["admin"]))):
     users = await db.users.find({}, {"_id": 0, "password_hash": 0}).to_list(1000)
